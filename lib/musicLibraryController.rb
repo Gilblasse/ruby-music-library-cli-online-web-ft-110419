@@ -53,7 +53,7 @@
     input = gets.chomp.to_i
     if !input.zero?
       index = input - 1
-       binding.pry
+      list_songs[index]
     end
     # puts "Playing Larry Csonka by Action Bronson"
     
