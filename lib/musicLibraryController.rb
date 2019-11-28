@@ -53,10 +53,11 @@
     input = gets.chomp.to_i
     if !input.zero?
       i = input - 1
+      binding.pry
       song = list_songs[index]
       song = list_songs[i].split('-')[1].strip
       artist = list_songs[i].split('-')[0].strip
-      binding.pry
+      
       puts "Playing #{song} by #{artist}"
     end
     # puts "Playing Larry Csonka by Action Bronson"
