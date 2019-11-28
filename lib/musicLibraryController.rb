@@ -51,9 +51,9 @@
   def play_song
     puts "Which song number would you like to play?"
     input = gets.chomp
+    
     if !input.zero?
       index = input - 1
-      binding.pry
     end
     # puts "Playing Larry Csonka by Action Bronson"
     
