@@ -54,7 +54,7 @@
     if input.between?(1,Song.all.size)
       i = input - 1
       selected_song = Song.all.sort{|a,b| a.name <=> b.name }[i]
-      
+      selected_song
     end
   end
     
