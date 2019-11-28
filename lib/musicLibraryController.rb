@@ -54,7 +54,7 @@
     if input.between?(1,Song.all.size)
       i = input - 1
       song = Song.all.sort{|a,b| a.name <=> b.name }[i]
-      puts ""
+      puts "Playing #{song.name} by #{song.artist.name}"
     end
   end
     
