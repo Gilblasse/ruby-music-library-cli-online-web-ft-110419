@@ -55,8 +55,9 @@
     if !input.zero?
       i = input - 1
       song = list_songs[index]
-      artist = list_songs[i].split('-')[1].strip
-      puts "Playing #{artist} by #{}"
+      song = list_songs[i].split('-')[1].strip
+      artist = list_songs[i].split('-')[0].strip
+      puts "Playing #{song} by #{artist}"
     end
     # puts "Playing Larry Csonka by Action Bronson"
     
