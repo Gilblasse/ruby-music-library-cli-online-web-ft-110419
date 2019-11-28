@@ -53,9 +53,9 @@
     input = gets.chomp.to_i
     binding.pry
     if !input.zero?
-      index = input - 1
+      i = input - 1
       song = list_songs[index]
-      puts "Playing #{}"
+      puts "Playing #{list_songs[i]}"
     end
     # puts "Playing Larry Csonka by Action Bronson"
     
