@@ -54,7 +54,8 @@
     binding.pry
     if !input.zero?
       index = input - 1
-      list_songs[index]
+      song = list_songs[index]
+      puts "Playing #{}"
     end
     # puts "Playing Larry Csonka by Action Bronson"
     
